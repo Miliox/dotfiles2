@@ -11,5 +11,27 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
+# Default editor
 export EDITOR='nvim'
+
+# Default language
 export LANG='en_US.UTF-8'
+
+# Limit path on screen
+export PROMPT_DIRTRIM=3
+
+# Preserve History
+export HISTFILE=~/.zsh_history
+export HISTSIZE=999999999
+export SAVEHIST=$HISTSIZE
+
+export FZF_DEFAULT_COMMAND='fd --type f'
+
+# switch of to tmux
+if command -v tmux &> /dev/null && \
+    [ -n "$PS1" ] && \
+    [[ ! "$TERM" =~ screen ]] && \
+    [[ ! "$TERM" =~ tmux ]] \
+    && [ -z "$TMUX" ]; then
+  exec tmux
+fi

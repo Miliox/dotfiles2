@@ -25,6 +25,7 @@ packages=(
     'rustup-init'
     'rsync'
     'tmux'
+    'tmux-mem-cpu-load'
     'todo-txt'
     'youtube-dl'
 )

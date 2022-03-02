@@ -1,8 +1,7 @@
 #!/bin/bash
-OS_NAME="$(uname -s)"
 
 # Setup Packages
-if [[ os -eq 'Darwin' ]]; then 
+if [[ $(uname -s) -eq 'Darwin' ]]; then 
 ./install_packages_brew.sh
 RUST_HOST='x86_64-apple-darwin'
 fi
@@ -37,11 +36,15 @@ mkdir -p ${HOME}/.config/alacritty
 mkdir -p ${HOME}/.config/nvim
 
 # Link scripts
+if [[ $(uname -s) -eq 'Darwin' ]]; then 
+    ln -f -s $(pwd)/zshrc         ${HOME}/.zshrc
+fi
+
 ln -f -s $(pwd)/alacritty.yml ${HOME}/.config/alacritty/alacritty.yml
 ln -f -s $(pwd)/bash_aliases  ${HOME}/.bash_aliases
 ln -f -s $(pwd)/gitconfig     ${HOME}/.gitconfig
 ln -f -s $(pwd)/init.vim      ${HOME}/.config/nvim/init.vim
-ln -f -s $(pwd)/zshrc         ${HOME}/.zshrc
+ln -f -s $(pwd)/tmux.conf     ${HOME}/.tmux.conf
 
 
 # Neo Vim Setup
