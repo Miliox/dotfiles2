@@ -55,6 +55,15 @@ alias jgrep='rgjv'
 alias jsgrep='rgjs'
 alias jjgrep='rgjj'
 
+# git
+alias gaddp='git addp'
+alias gaddu='git addu'
+alias gfix='git fix'
+alias gfo='git fetch origin'
+alias gro='git rebase origin/master'
+alias gst='git st'
+alias gl='git l'
+
 # single letter commands
 alias a='cat'
 alias b='cd -'
