@@ -22,6 +22,7 @@ packages=(
     'pv'
     'ripgrep'
     'rustup-init'
+    'rsync'
     'tmux'
     'todo-txt'
     'youtube-dl'
