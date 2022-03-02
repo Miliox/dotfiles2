@@ -25,7 +25,11 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
 
+# Fuzzy finder directory search
 export FZF_DEFAULT_COMMAND='fd --type f'
+
+# Prompt format
+export PS1='%F{green}%T %F{blue}%3~%f %? %F{yellow}λ%f '
 
 # switch of to tmux
 if command -v tmux &> /dev/null && \
@@ -33,5 +37,5 @@ if command -v tmux &> /dev/null && \
     [[ ! "$TERM" =~ screen ]] && \
     [[ ! "$TERM" =~ tmux ]] \
     && [ -z "$TMUX" ]; then
-  exec tmux
+  exec tmux new-session -A -s main
 fi
