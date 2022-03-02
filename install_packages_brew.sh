@@ -28,6 +28,7 @@ packages=(
     'tmux-mem-cpu-load'
     'todo-txt'
     'youtube-dl'
+    'zig'
 )
 
 taps=(
