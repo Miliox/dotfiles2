@@ -20,6 +20,7 @@ packages=(
     'most'
     'neofetch'
     'nvm'
+    'progress'
     'pv'
     'ripgrep'
     'rustup-init'
