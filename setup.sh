@@ -37,9 +37,11 @@ mkdir -p ${HOME}/.config/alacritty
 mkdir -p ${HOME}/.config/nvim
 
 # Link scripts
-ln -f -s $(pwd)/gitconfig     ${HOME}/.gitconfig
 ln -f -s $(pwd)/alacritty.yml ${HOME}/.config/alacritty/alacritty.yml
+ln -f -s $(pwd)/bash_aliases  ${HOME}/.bash_aliases
+ln -f -s $(pwd)/gitconfig     ${HOME}/.gitconfig
 ln -f -s $(pwd)/init.vim      ${HOME}/.config/nvim/init.vim
+ln -f -s $(pwd)/zshrc         ${HOME}/.zshrc
 
 
 # Neo Vim Setup
@@ -49,6 +51,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 ## Install Plugins
-nvim +PlugInstall +qall
+nvim +PlugUpdate +qall
 
 
