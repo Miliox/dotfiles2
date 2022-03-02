@@ -19,6 +19,7 @@ packages=(
     'luarocks'
     'most'
     'neofetch'
+    'nvm'
     'pv'
     'ripgrep'
     'rustup-init'
