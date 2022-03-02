@@ -14,6 +14,7 @@ function code()
 alias cpp='cling'
 
 # Replacements
+alias ..='cd ..'
 alias cat='pygmentize -g -O full,linenos=1,style=monokai'
 alias cp='rsync  --progress --verbose --human-readable'
 alias cpr='rsync --progress --verbose --human-readable --stats --recursive'
