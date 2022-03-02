@@ -23,6 +23,7 @@ packages=(
     'ripgrep'
     'rustup-init'
     'tmux'
+    'todo-txt'
     'youtube-dl'
 )
 
