@@ -21,6 +21,7 @@ packages=(
     'neofetch'
     'pv'
     'ripgrep'
+    'rustup-init'
     'tmux'
     'youtube-dl'
 )
