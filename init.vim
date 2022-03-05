@@ -108,6 +108,9 @@ Plug 'mbbill/undotree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 
+" Zig support
+Plug 'ziglang/zig.vim'
+
 call plug#end()
 
 " Use monokai
