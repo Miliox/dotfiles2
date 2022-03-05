@@ -35,7 +35,8 @@ export PS1='%F{green}%T %F{blue}%3~%f %? %F{yellow}λ%f '
 if command -v tmux &> /dev/null && \
     [ -n "$PS1" ] && \
     [[ ! "$TERM" =~ screen ]] && \
-    [[ ! "$TERM" =~ tmux ]] \
+    [[ ! "$TERM" =~ tmux ]] && \
+    [[ ! "$TERM_PROGRAM" =~ vscode ]] \
     && [ -z "$TMUX" ]; then
   exec tmux new-session -A -s main
 fi
