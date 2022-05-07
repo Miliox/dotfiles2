@@ -2,10 +2,11 @@
 
 
 packages=(
+    'cppman'
     'cling'
     'cmake'
     'cmake-docs'
-    'cppman'
+    'conan'
     'erlang'
     'fd'
     'ffmpeg'
@@ -19,6 +20,7 @@ packages=(
     'luarocks'
     'most'
     'neofetch'
+    'neovim'
     'nvm'
     'progress'
     'pv'
