@@ -3,6 +3,7 @@
 
 packages=(
     'cppman'
+    'cpufetch'
     'cling'
     'cmake'
     'cmake-docs'
@@ -14,6 +15,7 @@ packages=(
     'fzf'
     'git'
     'graphviz'
+    'gnuplot'
     'htop'
     'imagemagick'
     'lua'
@@ -22,6 +24,7 @@ packages=(
     'neofetch'
     'neovim'
     'nvm'
+    'octave'
     'progress'
     'pv'
     'ripgrep'
