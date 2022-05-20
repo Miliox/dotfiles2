@@ -24,12 +24,9 @@ alias edit='nvim'
 alias hd='most -b'
 alias hexdump='hd'
 
-if [[ $(uname -s) -eq 'Darwin' ]]; then
-    alias ls='ls -aFG'
-else
-    alias ls='ls --almost-all --classify --color=auto --group-directories-first --ignore-backups --human-readable'
-fi
+alias ls='exa --classify --icons --group-directories-first'
 alias ll='ls -l'
+alias tree='ls --tree'
 
 alias man='PAGER=most man'
 alias mkdir='mkdir -pv'

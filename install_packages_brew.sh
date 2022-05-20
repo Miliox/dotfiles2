@@ -9,6 +9,7 @@ packages=(
     'cmake-docs'
     'conan'
     'erlang'
+    'exa'
     'fd'
     'ffmpeg'
     'font-hack-nerd-font'
