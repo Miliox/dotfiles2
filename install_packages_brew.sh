@@ -17,6 +17,7 @@ packages=(
     'git'
     'graphviz'
     'gnuplot'
+    'glfw'
     'htop'
     'imagemagick'
     'lua'
