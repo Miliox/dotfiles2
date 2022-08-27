@@ -12,7 +12,7 @@ packages=(
     'exa'
     'fd'
     'ffmpeg'
-    'font-hack-nerd-font'
+    'font-fira-code-nerd-font'
     'fzf'
     'git'
     'graphviz'

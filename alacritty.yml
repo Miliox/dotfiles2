@@ -1,15 +1,15 @@
 font:
   normal:
-    family: "Hack Nerd Font Mono"
-    style: Regular
+    family: "FiraCode Nerd Font Mono"
+    style: Retina
   bold:
-    family: "Hack Nerd Font Mono"
+    family: "FiraCode Nerd Font Mono"
     style: Bold
   italic:
-    family: "Hack Nerd Font Mono"
+    family: "FiraCode Nerd Font Mono"
     style: Italic
   bold_italic:
-    family: "Hack Nerd Font Mono"
+    family: "FiraCode Nerd Font Mono"
     style: Bold Italic
 mouse:
   hide_when_typing: true

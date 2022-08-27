@@ -26,6 +26,7 @@ alias hexdump='hd'
 
 alias ls='exa --classify --icons --group-directories-first --git-ignore'
 alias ll='ls -l'
+alias lll='ll --header --group --created --modified --accessed --inode --links --time-style=iso'
 alias tree='ls --tree'
 
 alias man='PAGER=most man'
