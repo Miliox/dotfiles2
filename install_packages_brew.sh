@@ -12,7 +12,6 @@ packages=(
     'exa'
     'fd'
     'ffmpeg'
-    'font-fira-code-nerd-font'
     'fzf'
     'git'
     'graphviz'
@@ -44,7 +43,7 @@ taps=(
 )
 
 cask_packages=(
-    'font-hack-nerd-font'
+    'font-fira-code-nerd-font'
 )
 
 brew tap ${taps[*]}
