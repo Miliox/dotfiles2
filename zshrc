@@ -32,11 +32,14 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 export PS1='%F{green}%T %F{blue}%3~%f %? %F{yellow}λ%f '
 
 # switch of to tmux
+TERM_PARENT=$(\ps $PPID -o comm=)
+TERM_PARENT=${TERM_PARENT##*/}
 if command -v tmux &> /dev/null && \
     [ -n "$PS1" ] && \
     [[ ! "$TERM" =~ screen ]] && \
     [[ ! "$TERM" =~ tmux ]] && \
-    [[ ! "$TERM_PROGRAM" =~ vscode ]] \
-    && [ -z "$TMUX" ]; then
+    [[ ! "$TERM_PROGRAM" =~ vscode ]] && \
+    [[ ! "$TERM_PARENT" =~ lapce ]] && \
+    [ -z "$TMUX" ]; then
   exec tmux new-session -A -s main
 fi
