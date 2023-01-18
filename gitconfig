@@ -66,3 +66,5 @@
 [diff "zip"]
     textconv = unzip -c -a
 
+[init]
+	defaultBranch = main
