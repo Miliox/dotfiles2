@@ -1,5 +1,6 @@
 
-packages=('procs'
+packages=('alacritty'
+          'procs'
           'sd'
           'tealdeer')
 

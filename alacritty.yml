@@ -11,5 +11,6 @@ font:
   bold_italic:
     family: "FiraCode Nerd Font Mono"
     style: Bold Italic
+  size: 15
 mouse:
   hide_when_typing: false

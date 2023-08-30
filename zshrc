@@ -31,6 +31,11 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 # Prompt format
 export PS1='%F{green}%T %F{blue}%3~%f %? %F{yellow}λ%f '
 
+# vcpkg
+export CMAKE_TOOLCHAIN_FILE=${HOME}/Projects/vcpkg/scripts/buildsystems/vcpkg.cmake
+
+bindkey '^R' history-incremental-search-backward
+
 # switch of to tmux
 TERM_PARENT=$(\ps $PPID -o comm=)
 TERM_PARENT=${TERM_PARENT##*/}
