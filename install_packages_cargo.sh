@@ -1,5 +1,6 @@
 
 packages=('alacritty'
+          'eza'
           'procs'
           'sd'
           'tealdeer')

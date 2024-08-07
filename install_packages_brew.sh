@@ -9,7 +9,6 @@ packages=(
     'cmake-docs'
     'conan'
     'erlang'
-    'exa'
     'fd'
     'ffmpeg'
     'fzf'
@@ -34,7 +33,7 @@ packages=(
     'tmux'
     'tmux-mem-cpu-load'
     'todo-txt'
-    'youtube-dl'
+    'yt-dlp'
     'zig'
 )
 

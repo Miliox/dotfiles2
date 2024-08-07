@@ -24,7 +24,7 @@ alias edit='nvim'
 alias hd='most -b'
 alias hexdump='hd'
 
-alias ls='exa --classify --icons --group-directories-first'
+alias ls='eza --classify --icons --group-directories-first'
 alias ll='ls -l'
 alias lll='ll --header --group --created --modified --accessed --inode --links --time-style=iso'
 alias tree='ls --tree'
